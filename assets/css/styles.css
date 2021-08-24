@@ -373,6 +373,14 @@ span{
     animation: animation-1 2s linear infinite;
 }
 
+@media (max-width: 320px){
+    .header-hero .shape.shape-1{
+       display:none;
+    }
+}
+
+
+
 .header-hero .shape.shape-2{
    
     width: 39px;
@@ -422,11 +430,17 @@ span{
 
 
 
-@media only screen and (min-width: 768px) and (max-width:991px), (max-width:767px){
+@media (min-width: 320px){
     .header-hero-content{
-        margin-top: 30%;
+        margin-top: 150px;
     }
-         
+    .logo-sm{
+        display: none;
+    }
+    .navbar-brand .image{
+        max-width: 50px;
+    }  
+
      }
  
 
@@ -533,16 +547,15 @@ span{
     display:inline-block;
     position: relative;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom:100px;
 }
 
 
 
 .about-image .pro{
-    max-width:500px;
-   
-
+    max-width:auto;
+    
 }
 
 .title{
@@ -564,6 +577,9 @@ span{
     padding: 100px 0;
     background-color: rgba(230, 156, 95, 1);
 }
+
+
+
 
 .testimonial-section .tns-controls {
     position: absolute;
@@ -671,6 +687,22 @@ span{
     line-height: 1;
     color: rgba(72, 124, 255, .5);
 }
+
+
+@media (min-width: 320px) {
+    .testimonial-section .single-testimonial .quote{
+        display:none;
+    }
+    .testimonial-section .single-testimonial .content p{
+        font-size: 12px;
+    }
+    .testimonial-section .single-testimonial .info {
+        font-size:8px;
+        display: inline-block;
+    }
+}
+
+
 
 
 /*Contact us */
